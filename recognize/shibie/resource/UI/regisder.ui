@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>495</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>495</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>495</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget#centralwidget{
+     border-image: url(:/register/images/regisder_background.jpg);
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>750</width>
+     <height>495</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>750</width>
+     <height>495</height>
+    </size>
+   </property>
+   <widget class="QLabel" name="lrlb">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>100</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>录入面部：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="qr">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>340</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+      background-color: rgb(255, 170, 0);
+	  border-radius:10px;
+
+}
+QPushButton:disabled{
+      background-color: rgb(167, 167, 167);
+
+
+}
+QPushButton:hover {
+      background-color:rgb(255, 255, 0);
+
+}
+QPushButton:pressed {
+      background-color:rgb(214, 71, 0);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chongzhi">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>340</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+      background-color: rgb(255, 170, 0);
+      border-radius:10px;
+
+}
+QPushButton:hover {
+      background-color:rgb(255, 255, 0);
+
+}
+QPushButton:pressed {
+      background-color:rgb(214, 71, 0);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>重置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tc">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>340</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+      background-color: rgb(255, 170, 0);
+      border-radius:10px;
+
+}
+QPushButton:hover {
+      background-color:rgb(255, 255, 0);
+
+}
+QPushButton:pressed {
+      background-color:rgb(214, 71, 0);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>271</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="xingming">
+       <property name="text">
+        <string>姓    名：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="xm">
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="xingbie">
+       <property name="text">
+        <string>性    别：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="xb">
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="shenfen">
+       <property name="text">
+        <string>身份证号：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="sfzh">
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="rzny">
+       <property name="text">
+        <string>入职年月：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="rzny_1">
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lxdh">
+       <property name="text">
+        <string>联系电话：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lxdh_1">
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="lrmb">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>110</y>
+      <width>311</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 248, 248);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>chongzhi</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>375</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>560</x>
+     <y>494</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>queren()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>xm</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableregisder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-15</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>xb</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableregisder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-26</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sfzh</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableregisder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>245</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-10</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lxdh_1</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableregisder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-26</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rzny_1</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableregisder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-7</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tc</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>664</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>658</x>
+     <y>503</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>tuichu()</slot>
+  <slot>reset()</slot>
+  <slot>queren()</slot>
+  <slot>enableregisder()</slot>
+ </slots>
+</ui>
