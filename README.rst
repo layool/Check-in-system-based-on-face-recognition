@@ -9,14 +9,6 @@ Introduction
 If you are interested in the algorithm of face recognition in dlib, please visit http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html for more information.
 
 
-warning！warning！warning！
-	It is useless to download files directly from the warehouse, because some necessary files are missing.you must download from https://github.com/coneypo/Dlib_face_recognition_from_camera/tree/master/data/data_dlib
-to Check-in-system-based-on-face-recognition/recognize/shibie/resource/data/data_dlib
-
-
-
-
-
 altered from http://www.cnblogs.com/AdaminXie
 
 
